@@ -1,0 +1,14 @@
+fisrt： 安装PyAutoGUI库 打开终端并运行以下命令安装pyautogui库：粘贴下面代码更新
+pip install pyautogui  
+then ：编写脚本 打开PyCharm，新建一个Python文件（例如auto_clicker.py），并粘贴以下代码：
+import pyautogui
+import time
+
+try:
+    print("Press Ctrl+C to stop the script.")
+    while True:
+        pyautogui.click()
+        time.sleep(0.2)
+except KeyboardInterrupt:
+    print("Script stopped.")
+最后运行脚本 在PyCharm中运行此脚本。脚本会每隔0.2秒自动点击一次鼠标左键，直到你按下Ctrl+C停止脚本。
